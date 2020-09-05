@@ -2,7 +2,7 @@
 Einstaklingsverkefni
 
 1. (1%) Kynntu þér [Raspberry Pi](https://github.com/GunnarThorunnarson/VESM2CU/wiki/Raspberry-Pi)
-2. (1%) Settu upp Raspberry Pi OS stýrikerfið á SD kortið. Sjá [Stýrikerfi](hhttps://github.com/GunnarThorunnarson/VESM2CU/wiki/St%C3%BDrikerfi-og-RPi)
+2. (1%) Settu upp Raspberry Pi OS stýrikerfið á SD kortið. Sjá [Stýrikerfi](https://github.com/GunnarThorunnarson/VESM2CU/wiki/St%C3%BDrikerfi-og-RPi)
 3. (1%) Kynntu þér [Raspberry Pi OS](https://github.com/GunnarThorunnarson/VESM2CU/wiki/St%C3%BDrikerfi-og-RPi) og helstu forrit.
 4. (1%) Fygldu [Setting up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/3)
    - Haltu default stillingum (í bili); notandi: pi  og lykilorð: raspberry
