@@ -1,4 +1,4 @@
-### Verkefni 1 - 10% _Drög_
+### Verkefni 1 - 10% 
 Einstaklingsverkefni
 
 1. (1%) Kynntu þér [Raspberry Pi](https://github.com/GunnarThorunnarson/VESM2CU/wiki/Raspberry-Pi)
