@@ -12,11 +12,10 @@ Einstaklingsverkefni
    - Gerðu viðeigandi stillingar, upppfærslur osfrv. skv leiðbeiningum.
 6. (2%) SSH með Raspberry Pi [Að tengjast RPi](https://github.com/GunnarThorunnarson/VESM2CU/wiki/A%C3%B0-tengjast-Raspberry-Pi)
    - Stilltu Raspberry Pi þannig að þú getur tengst honum með SSH 
-
+   - Skrifaðu og prentaðu út "Halló heimur" strenginn í python með nano ritlinum
 7. (2%) Settu upp VNC (Virtual Network Computing) Sjá [Að tengjast RPi](https://github.com/GunnarThorunnarson/VESM2CU/wiki/A%C3%B0-tengjast-Raspberry-Pi)
    - Að keyra VNC server á Raspberry Pi leyfir þér að stjórna **Raspberry Pi desktop** þráðlaust á fartölvu (the VNC viewer).
-   
-8. (1%) Skrifaðu og prentaðu út "Halló RPi heimur" strenginn með Python og IDLE (eða öðrum ritli) á Raspberry Pi OS.
+   - Skrifaðu og prentaðu út "Halló heimur" strenginn í python með Thonny ritlinum á Raspberry Pi OS.
 
 
 ### Námsmat
