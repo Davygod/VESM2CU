@@ -3,10 +3,11 @@
 1. Finndu IP á RPi
     
     - https://www.raspberrypi.org/documentation/remote-access/ip-address.md
+    - subnet range í Tækniskóla er: 10.11.45.1-254
     - `ping raspberrypi.local`
     - nmap (Network Mapper) `sudo nmap -sn 192.168.1.0/24`       
     - ýmis forrit: FRING (andrion app), Advanced IP scanner
-    - subnet range í Tækniskóla er: 10.11.45.1-254
+   
 
     
 2. VNC
