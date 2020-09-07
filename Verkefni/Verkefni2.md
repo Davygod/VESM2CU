@@ -1,4 +1,4 @@
-### Verkefni 2 - GPIO (10%) - **_Í vinnslu_**
+### Verkefni 2 - Skynjarar (15%) - **_Í vinnslu_**
 - Einstaklingsverkefni
 
 ---
