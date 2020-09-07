@@ -11,4 +11,6 @@ Notaðu PIR hreyfisyknjara til að kveikja á LED.
 - [Nánar um PIR (ath víxlaðu GND og Vc í PIR)](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
 - [Datasheet](https://components101.com/hc-sr501-pir-sensor)
 
-* Meira væntanlegt!
+---
+
+Meira væntanlegt!
