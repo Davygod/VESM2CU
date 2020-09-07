@@ -4,7 +4,7 @@
 ---
 
 1. Blikkandi ljós <br>
-Láttu LED blikka með python kóða. Notaðu GPIO og braðubretti.
+Láttu LED blikka á brauðbretti með python kóða. Notaðu RPi.GPI safnið.
 
 2. PIR hreyfiskynjarinn <br>
 Notaðu PIR hreyfisyknjara til að kveikja á LED.
