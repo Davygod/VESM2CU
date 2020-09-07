@@ -3,10 +3,10 @@
 
 ---
 
-1. Blikkandi ljós 
+1. Blikkandi ljós <br>
 Láttu LED blikka með python kóða. Notaðu GPIO og braðubretti.
 
-2. PIR hreyfiskynjarinn 
+2. PIR hreyfiskynjarinn <br>
 Notaðu PIR hreyfisyknjara til að kveikja á LED.
 - [Nánar um PIR (ath víxlaðu GND og Vc í PIR)](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
 - [Datasheet](https://components101.com/hc-sr501-pir-sensor)
