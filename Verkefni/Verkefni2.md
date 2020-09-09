@@ -11,7 +11,8 @@ Notið BCM, ekki BOARD
 Notaðu PIR hreyfisyknjara til að kveikja á LED.
     - [Nánar um PIR (ath víxlaðu GND og Vc í PIR)](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
     - [Datasheet](https://components101.com/hc-sr501-pir-sensor)
-
+    - [How to Interface a PIR Motion Sensor With Raspberry Pi GPIO](https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-with-raspberry-pi-gpio)
+    
 ---
 
 Meira væntanlegt!
