@@ -22,7 +22,7 @@ Taktu 5 sekúndu myndband með Pi NoIR V2 myndavélinni tengda við RPi og pytho
    - [PiCamera documentation](https://picamera.readthedocs.io/en/release-1.13/)
 
 1. PIR og Pi Camera **(4%)** <br>
-Taktu mynd þegar PIR hreyfiskynjarifer í gang og sendu myndina á gmail netfang.
+Taktu mynd þegar PIR hreyfiskynjari fer í gang og sendu ljósmyndina á gmail netfang.
    - [How to Use the Raspberry Pi4 Camera and PIR Sensor to Send Emails](https://maker.pro/raspberry-pi/projects/how-to-use-the-raspberry-pi4-camera-and-pir-sensor-to-send-emails)
    <!-- 
    - [How to Use the Raspberry Pi Camera and PIR to Send Emails](https://maker.pro/raspberry-pi/tutorial/how-to-use-the-raspberry-pi-camera-to-send-emails)
