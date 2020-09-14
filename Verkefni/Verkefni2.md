@@ -1,4 +1,4 @@
-### Verkefni 2 - Skynjarar (15%)  **_Í vinnslu_**
+### Verkefni 2 - Skynjarar (15%) 
 Einstaklingsverkefni
 
 ---
@@ -12,18 +12,23 @@ Notaðu PIR hreyfisyknjara til að kveikja á LED.
     - [How to Interface a PIR Motion Sensor With Raspberry Pi GPIO](https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-with-raspberry-pi-gpio)
     - Yfirfarðu kóðann, tengdu víra rétt í PIR (finna datasheet), stilltu næmleika og timeout (hve lengi) á PIR, taktu linsu af PIR til að þrengja IR svið. 
    
-1. Pi NoIR V2 Camera **(3%)** <br>
-Taktu sjálfsmynd með 1024x768 upplausn (eða hærri) með Pi NoIR V2 myndavélinni tengda við RPi og Python.
-
+1. Pi NoIR V2 Camera **(2%)** <br>
+Notaðu python og taktu mynd með 1024x768 upplausn (eða hærri) af sjálfum þér með Pi NoIR V2 myndavélinni tengda við RPi.   
    - **Varúð!** Slökktu fyrst á RPi þegar þú tengir myndavélina við Camera Serial Interface (CSI) á RPi. 
    - Sjá tutorial [Setting up the Pi NoIR Camera with Raspberry Pi](https://maker.pro/raspberry-pi/tutorial/how-to-interface-pi-noir-v2-camera-with-raspberry-pi)
+  
+1. Pi NoIR V2 Camera **(2%)** <br>
+Taktu 5 sekúndu myndband með Pi NoIR V2 myndavélinni tengda við RPi og python   
    - [PiCamera documentation](https://picamera.readthedocs.io/en/release-1.13/)
 
-1. PIR og Pi Camera **(5%)**  _væntanlegt_ <br>
-
+1. PIR og Pi Camera **(4%)** <br>
+Taktu mynd þegar PIR hreyfiskynjarifer í gang og sendu myndina á gmail netfang.
+   - [How to Use the Raspberry Pi4 Camera and PIR Sensor to Send Emails](https://maker.pro/raspberry-pi/projects/how-to-use-the-raspberry-pi4-camera-and-pir-sensor-to-send-emails)
+   <!-- 
+   - [How to Use the Raspberry Pi Camera and PIR to Send Emails](https://maker.pro/raspberry-pi/tutorial/how-to-use-the-raspberry-pi-camera-to-send-emails)
+   -->
 ---
 
 ### Námsmat
 - Gefið er fyrir hvern þið fullt fyrir fullnægjandi lausn, hálft ef ábótavant.
 - Skilaðu á Innu vefslóð á Wiki síðu á Github sem inniheldur lausnir, kóða og myndbönd af verklegum tilraunum.
-
