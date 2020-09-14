@@ -13,7 +13,8 @@ Notaðu PIR hreyfisyknjara til að kveikja á LED.
     - Yfirfarðu kóðann, tengdu víra rétt í PIR (finna datasheet), stilltu næmleika og timeout (hve lengi) á PIR, taktu linsu af PIR til að þrengja IR svið. 
    
 1. Pi NoIR V2 Camera **(3%)** <br>
-Notaðu python og taktu mynd með 1024x768 upplausn (eða hærri) af sjálfum þér með Pi NoIR V2 myndavélinni tengda við RPi.   
+Taktu mynd með 1024x768 upplausn (eða hærri) af sjálfum þér með Pi NoIR V2 myndavélinni tengda við RPi. Notaðu Python.
+
    - **Varúð!** Slökktu fyrst á RPi þegar þú tengir myndavélina við Camera Serial Interface (CSI) á RPi. 
    - Sjá tutorial [Setting up the Pi NoIR Camera with Raspberry Pi](https://maker.pro/raspberry-pi/tutorial/how-to-interface-pi-noir-v2-camera-with-raspberry-pi)
    - [PiCamera documentation](https://picamera.readthedocs.io/en/release-1.13/)
