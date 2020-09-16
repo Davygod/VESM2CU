@@ -6,6 +6,8 @@ Einstaklingsverkefni
 1. Blikkandi ljós og GPIO **(3%)** <br>
 Láttu LED blikka á brauðbretti með python kóða. Notaðu [RPi.GPIO](https://sourceforge.net/p/raspberry-gpio-python/wiki/Examples/) með BCM númerakerfinu. Sjá t.d. [blink tutorial (notar BOARD)](https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/)
 
+[Myndband fyrir Blikkandi ljós og GPIO](https://photos.google.com/share/AF1QipNI5BMS1oLpVPu26KQNOIBfwJEtt-CevgKzSNRNB3fKdRXGCcydyDOxMizIV_yBvg/photo/AF1QipPiyt2n1k6f10j2oNgs3Z9bzobc7_g-pDZ-FCjR?key=Wk9EM3o4aEUyMTlkTmIwVkdTV19DMnRIM0w1WlZn)
+
 1. PIR hreyfiskynjarinn **(4%)** <br>
 Notaðu PIR hreyfisyknjara til að kveikja á LED.
     - [Nánar um PIR (ath víxlaðu GND og Vc í PIR)](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
