@@ -27,7 +27,7 @@ Taktu mynd þegar PIR hreyfiskynjari fer í gang og sendu ljósmyndina á gmail 
       1. Búðu til Gmail reikning og skráðu þig inn.
       1. Finndu “Allow less secure apps” to turn it on. <br> Now you can use your Gmail login info to receive emails containing Python code!
    <!-- 
-   - [How to Use the Raspberry Pi Camera and PIR to Send Emails](https://maker.pro/raspberry-pi/tutorial/how-to-use-the-raspberry-pi-camera-to-send-emails)
+   - Sjá líka [How to Use the Raspberry Pi Camera and PIR to Send Emails](https://maker.pro/raspberry-pi/tutorial/how-to-use-the-raspberry-pi-camera-to-send-emails)
    -->
 ---
 
