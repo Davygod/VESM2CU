@@ -24,9 +24,8 @@ Taktu 5 sekúndu myndband með Pi NoIR V2 myndavélinni tengda við RPi og pytho
 1. PIR og Pi Camera **(4%)** <br>
 Taktu mynd þegar PIR hreyfiskynjari fer í gang og sendu ljósmyndina á gmail netfang.
     - [How to Use the Raspberry Pi4 Camera and PIR Sensor to Send Emails](https://maker.pro/raspberry-pi/projects/how-to-use-the-raspberry-pi4-camera-and-pir-sensor-to-send-emails)
-    1. Búðu til Gmail reikning og skráðu þig inn.
-    1. Finndu “Allow less secure apps” to turn it on.
-    Now you can use your Gmail login info to receive emails containing Python code!
+      1. Búðu til Gmail reikning og skráðu þig inn.
+      1. Finndu “Allow less secure apps” to turn it on. Now you can use your Gmail login info to receive emails containing Python code!
    <!-- 
    - [How to Use the Raspberry Pi Camera and PIR to Send Emails](https://maker.pro/raspberry-pi/tutorial/how-to-use-the-raspberry-pi-camera-to-send-emails)
    -->
