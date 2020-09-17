@@ -54,15 +54,15 @@ Notaðu python og taktu mynd með 1024x768 upplausn (eða hærri) af sjálfum þ
    - [Svar: Myndband fyrir /home/pi/picamera.py ]()<br>
    - Svar: Kóði fyrir /home/pi/picamera.py<br>
         ´´´
-        from time import sleep
-        from picamera import PiCamera
-        camera = PiCamera()
-        camera.resolution = (1024, 768)
-        camera.start_preview()
+        from time import sleep<br>
+        from picamera import PiCamera<br>
+        camera = PiCamera()<br>
+        camera.resolution = (1024, 768)<br>
+        camera.start_preview()<br><br>
 
-        #camera warm-up time
-        sleep(2)
-        camera.capture( ‘image.jpg’ )
+        #camera warm-up time<br>
+        sleep(2)<br>
+        camera.capture( ‘image.jpg’ )<br>
         ´´´
   
 1. Pi NoIR V2 Camera **(2%)** <br>
@@ -77,7 +77,106 @@ Taktu mynd þegar PIR hreyfiskynjari fer í gang og sendu ljósmyndina á gmail 
       1. Búðu til Gmail reikning og skráðu þig inn.
       1. Finndu “Allow less secure apps” to turn it on. <br> Now you can use your Gmail login info to receive emails containing Python code!
     - [Svar: Myndband fyrir ]()<br>
-    - Svar: Kóði
+    - Svar: Kóði fyrir gmail.py<br>
+        ´´´
+        import RPi.GPIO as GPIO<br>
+        import time<br>
+        import datetime<br>
+        import picamera<br>
+        import os<br>
+        import smtplib<br>
+        from email import encoders<br>
+        from email.mime.base import MIMEBase<br>
+        from email.mime.multipart import MIMEMultipart<br>
+
+
+        camera = picamera.PiCamera()<br>
+        GPIO.setmode(GPIO.BCM)<br>
+        <br>
+        GPIO.setup(23, GPIO.IN) #PIR<br>
+        GPIO.setup(24, GPIO.OUT) #BUzzer<br>
+        <br>
+        '''<br>
+        ts = time.time()<br>
+        st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')<br>
+        '''<br>
+        <br>
+        <br>
+        <br>
+        COMMASPACE = ', '<br>
+        <br>
+        def Send_Email(image):<br>
+            sender = '###YOUREMAIL###'<br>
+            gmail_password = '###YOURPASSWORD###'<br>
+            recipients = ['##YOURRECIPENTEMAIL###']<br>
+        <br>
+            # Create the enclosing (outer) message<br>
+            outer = MIMEMultipart()<br>
+            outer['Subject'] = 'Attachment Test'<br>
+            outer['To'] = COMMASPACE.join(recipients)<br>
+            outer['From'] = sender<br>
+            outer.preamble = 'You will not see this in a MIME-aware mail reader.\n'<br>
+        <br>
+            # List of attachments<br>
+            attachments = [image]<br>
+        <br>
+            # Add the attachments to the message<br>
+            for file in attachments:<br>
+                try:<br>
+                    with open(file, 'rb') as fp:<br>
+                        msg = MIMEBase('application', "octet-stream")<br>
+                        msg.set_payload(fp.read())<br>
+                    encoders.encode_base64(msg)<br>
+                    msg.add_header('Content-Disposition', 'attachment', filename=os.path.basename(file))<br>
+                    outer.attach(msg)<br>
+                except:<br>
+                    print("Unable to open one of the attachments. Error: ", sys.exc_info()[0])<br>
+                    raise<br>
+        <br>
+            composed = outer.as_string()<br>
+        <br>
+            # Send the email<br>
+            try:<br>
+                with smtplib.SMTP('smtp.gmail.com', 587) as s:<br>
+                    s.ehlo()<br>
+                    s.starttls()<br>
+                    s.ehlo()<br>
+                    s.login(sender, gmail_password)<br>
+                    s.sendmail(sender, recipients, composed)<br>
+                    s.close()<br>
+                print("Email sent!")<br>
+            except:<br>
+                print("Unable to send the email. Error: ", sys.exc_info()[0])<br>
+                raise<br>
+        <br>
+        <br>
+        <br>
+        try:<br>
+            time.sleep(2) # to stabilize sensor<br>
+        <br>
+        <br>
+            while True:<br>
+                ##Timeloop<br>
+                ts = time.time()<br>
+                st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')<br>
+                if GPIO.input(23):<br>
+                    ##If loop<br>
+                    GPIO.output(24, True)<br>
+                    time.sleep(0.5) #Buzzer turns on for 0.5 sec<br>
+                    print("Motion Detected at {}".format(st))<br>
+                    ##Adds timestamp to image<br>
+                    camera.capture('image_Time_{}.jpg'.format(st))<br>
+                    image = ('image_Time_{}.jpg'.format(st))<br>
+                    Send_Email(image)<br>
+                    time.sleep(2)<br>
+                    GPIO.output(24, False)<br>
+                    time.sleep(5) #to avoid multiple detection<br>
+        <br>
+                time.sleep(0.1) #loop delay, should be less than detection delay<br>
+        <br>
+        except:<br>
+            GPIO.cleanup()<br>
+                ´´´
    <!-- 
    - Sjá líka [How to Use the Raspberry Pi Camera and PIR to Send Emails](https://maker.pro/raspberry-pi/tutorial/how-to-use-the-raspberry-pi-camera-to-send-emails)
    -->
