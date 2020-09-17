@@ -6,7 +6,22 @@ Einstaklingsverkefni
 1. Blikkandi ljós og GPIO **(3%)** <br>
 Láttu LED blikka á brauðbretti með python kóða. Notaðu [RPi.GPIO](https://sourceforge.net/p/raspberry-gpio-python/wiki/Examples/) með BCM númerakerfinu. Sjá t.d. [blink tutorial (notar BOARD)](https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/)
 
-    [Svar: Myndband fyrir Blikkandi ljós og GPIO](https://photos.google.com/share/AF1QipNI5BMS1oLpVPu26KQNOIBfwJEtt-CevgKzSNRNB3fKdRXGCcydyDOxMizIV_yBvg/photo/AF1QipPiyt2n1k6f10j2oNgs3Z9bzobc7_g-pDZ-FCjR?key=Wk9EM3o4aEUyMTlkTmIwVkdTV19DMnRIM0w1WlZn)
+    [Svar: Myndband fyrir Blikkandi ljós og GPIO](https://photos.google.com/share/AF1QipNI5BMS1oLpVPu26KQNOIBfwJEtt-CevgKzSNRNB3fKdRXGCcydyDOxMizIV_yBvg/photo/AF1QipPiyt2n1k6f10j2oNgs3Z9bzobc7_g-pDZ-FCjR?key=Wk9EM3o4aEUyMTlkTmIwVkdTV19DMnRIM0w1WlZn)<br>
+    Svar: Kóði<br>
+    '''ruby
+    import RPi.GPIO as GPIO # Set upp Raspberry Pi GPIO library<br>
+    from time import sleep # Set inn sleep úr time module<br>
+    GPIO.setwarnings(False) # Hunsa aðvörun í bili<br>
+    GPIO.setmode(GPIO.BCM) # Nota BCM-tölur<br>
+    GPIO.setup(26, GPIO.OUT, initial=GPIO.LOW) # Set BCM26 sem úttaks pinni stilli í low<br>
+    while True: # Keyrir að eilífu<br>
+        '''ruby
+        GPIO.output(26, GPIO.HIGH) # Set í gang<br>
+        sleep(1) # Sleep for 1 second<br>
+        GPIO.output(6, GPIO.LOW) # Turn off<br>
+        sleep(1) # Sleep for 1 second<br>
+        '''
+    '''
 
 1. PIR hreyfiskynjarinn **(4%)** <br>
 Notaðu PIR hreyfisyknjara til að kveikja á LED.
