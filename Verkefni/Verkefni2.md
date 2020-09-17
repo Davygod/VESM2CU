@@ -26,8 +26,26 @@ Notaðu PIR hreyfisyknjara til að kveikja á LED.
     - [Nánar um PIR (ath víxlaðu GND og Vc í PIR)](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
     - [How to Interface a PIR Motion Sensor With Raspberry Pi GPIO](https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-with-raspberry-pi-gpio)
     - Yfirfarðu kóðann, tengdu víra rétt í PIR (finna datasheet), stilltu næmleika og timeout (hve lengi) á PIR, taktu linsu af PIR til að þrengja IR svið.<br>
-    - [Svar: Myndband fyrir ]()<br>
-    - Svar: Kóði
+    - [Svar: Myndband fyrir pirtest.py]()<br>
+    - Svar: Kóði fyrir pirtest.py<br>
+        ´´´
+        import RPi.GPIO as GPIO<br>
+        import time<br>
+        GPIO.setwarnings(False)<br>
+        GPIO.setmode(GPIO.BCM)<br>      #Stilli yfir í BCM
+        GPIO.setup(11, GPIO.IN)         #Les úttak frá PIR-hreyfiskynjaranum<br>
+        GPIO.setup(26, GPIO.OUT)         #LED úttaks pinni<br>
+        while True:<br>
+            i=GPIO.input(11)<br>
+            if i==0:                 #Þegar úttakið í hreyfiskynjaranum er LOW<br>
+                print "No intruders",i<br>
+                GPIO.output(3, 0)  #Slekkur LED<br>
+                time.sleep(0.1)<br>
+            elif i==1:               #Þegar úttakið í hreyfiskynjaranum er HIGH<br>
+                print "Intruder detected",i<br>
+                GPIO.output(3, 1)  #Setur LED í gang<br>
+                time.sleep(0.1)<br>
+        ´´´
       
 1. Pi NoIR V2 Camera **(2%)** <br>
 Notaðu python og taktu mynd með 1024x768 upplausn (eða hærri) af sjálfum þér með Pi NoIR V2 myndavélinni tengda við RPi.   
