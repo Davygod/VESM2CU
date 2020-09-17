@@ -51,8 +51,19 @@ Notaðu PIR hreyfisyknjara til að kveikja á LED.
 Notaðu python og taktu mynd með 1024x768 upplausn (eða hærri) af sjálfum þér með Pi NoIR V2 myndavélinni tengda við RPi.   
    - **Varúð!** Slökktu fyrst á RPi þegar þú tengir myndavélina við Camera Serial Interface (CSI) á RPi. 
    - Sjá tutorial [Setting up the Pi NoIR Camera with Raspberry Pi](https://maker.pro/raspberry-pi/tutorial/how-to-interface-pi-noir-v2-camera-with-raspberry-pi)<br>
-   - [Svar: Myndband fyrir ]()<br>
-   - Svar: Kóði
+   - [Svar: Myndband fyrir /home/pi/picamera.py ]()<br>
+   - Svar: Kóði fyrir /home/pi/picamera.py<br>
+        ´´´
+        from time import sleep
+        from picamera import PiCamera
+        camera = PiCamera()
+        camera.resolution = (1024, 768)
+        camera.start_preview()
+
+        #camera warm-up time
+        sleep(2)
+        camera.capture( ‘image.jpg’ )
+        ´´´
   
 1. Pi NoIR V2 Camera **(2%)** <br>
 Taktu 5 sekúndu myndband með Pi NoIR V2 myndavélinni tengda við RPi og python   
